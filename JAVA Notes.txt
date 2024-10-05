@@ -1,0 +1,580 @@
+Package: A package is a collection of similar classes and interfaces.
+It's just like folders in your system.
+Class :
+
+* It is a template or blueprint to create objects.
+* A class contains variables and methods/functions.
+
+Method/Function : 
+A block of code which can perform a specific task whenever it is called.
+
+main() : It is the entry point from which we can start our execution. Without the main() method, we cannot run our programs.
+
+Naming Conventions :
+
+Classes & Interfaces : 
+CamelCase : First letter of every word should be capital.
+
+RateOfInterest
+Methods/Functions/Variables : Pascal Naming Convention:
+
+First letter of first word is small and all other words have their first letter capital.
+
+rateOfInterest
+
+Variable : It is a memory location / container where you can store data depending on the data type. 
+
+
+Comments : Comments are written to increase the readability of a code/program. Comments are not executed and they are ignored by the compiler. They are just for our understanding.
+
+Data Types : Primitive & Reference (Non-primitive)
+
+Primitive Data Types : These data types store simple values 
+
+byte 
+short
+int 
+float
+double
+long
+char  'a' 'A'
+boolean   true & false
+
+
+Identifier :
+Variable names are identifiers : 
+int a = 10; a -> identifier
+
+String message = "Hello";  identifier -> message
+
+Rules for naming variables :
+1. Should start with a letter
+2. Can contain letters, digits, underscores, and dollar signs
+3. Should start with lowercase and it cannot have spaces
+4. Can begin with $
+5. Identifiers are case-sensitive varname varName
+6. Reserved keywords cannot be used. (char-int-boolean)-can't use.
+
+
+Type Casting : The process of converting from one data type to another is called type casting.
+Two types :
+1. Widening Casting 
+2. Narrowing Casting
+
+Note : In the main method String[] args is an array of arguments
+used to pass command line arguments to your program. It helps the developer to debug the program for successful execution and verification. 
+
+Operators in Java :
+
+Unary Operators : ++,-- (prefix/postfix)
+Arithmetic : +,-,/,*,%
+Shift : >>,<<
+Relational : >,<,>=,<=,==,!=
+Bitwise : &-> Ampersand, |->Pipe Symbol, ^->Caret, ~->Tilde
+Logical : &&, ||
+Ternary : ? :
+Assignment : =, +=,-=,/=,*=
+
+Conditional Statements :
+
+if-else :
+* General if
+* if-else if ladder
+* nested if else
+
+switch
+
+Looping Statements :
+* while : First the condition is checked and then the control goes inside the loop if it is true.
+* do - while : The program is executed at least once before checking the condition. Then, if the condition is true, the loop is repeated.
+Difference b/w for and while :
+
+When we know the number of steps we use a for loop.
+When we don't know the number of steps we use a while loop.
+
+Nested For Loop:
+Working Principle:
+The inner for loop will complete the full iteration and then only the control goes to the outer for loop.
+
+Break & Continue Statements :
+
+* Break statement breaks the loop and terminates.
+
+* Continue statement skips the current value and goes to the beginning of the loop for the next iteration/value.
+
+Strings In Java :
+
+* String is a sequence of characters.
+* Anything written inside double quotes is a String. 
+* It can contain :
+	* Alphabets (a-z)(A-Z)
+	* Numbers (0-9)
+	* Special characters (/?;:#&%$£)
+	* Spaces
+* Strings are immutable. (Cannot be changed)
+Strings are called immutable because we cannot modify a string. We can just create copies of a string but the original string will not be modified.
+
+Methods : A method/function is a block of code which can perform a specific task. It executes only when it is called. 
+
+Static methods : These methods belong to the class. We don't need to create objects to access these methods. Static keyword is used for memomry management.
+
+Non-static methods can be accessed only by creating objects of that class.
+void method doesn't need return statement.
+All other methods should have return statement.	 
+
+Important Interview Question :
+
+Why is the main method static ?
+
+Everytime object is created it occupies memory. So, to save memory we use static methods. Therefore, the main method is static so that JVM can call it directly without creating any objects.
+
+Reference Variables in Java :
+
+There are three types of reference variables in Java. They are:
+1. Static reference variable.
+* Static reference variable belongs to the class and can be accessed by every method. 
+* No object needs to be created. 
+* If we do not initialize a static variable, it takes the default value.
+Default values:
+String --> null
+int --> 0
+boolean --> false
+
+2. Instance reference variable.
+* Instance reference variables belong to each object of the class.
+* We must create an object to access instance reference variables.
+
+3. Local reference variable.
+* Local reference variables belong to each method. 
+* Only that method can access the variables. 
+* No other methods can access local reference variables from other methods.
+Example: BMTC//KSRTC Bus - Globally Available
+         Private Bike//Car - Locally Available to the owner.  
+
+Interview Question :
+Explain System.out.println();
+
+System is a 'class'
+out is an 'object'
+println() is a 'method' which we are able to access because of the out object. 
+
+Arrays : 
+Array is a collection of meaningful data/objects.
+It can be a collection of numbers, names, etc. 
+It must be a unique data type.
+
+Two types of arrays :
+Single dimensional array : only one row
+Multi dimensional array : rows and columns
+Jagged Array : A jagged array is a multi-dimensional array where the length of each row is different.
+
+Enhanced For Loop / For each loop ?
+
+Syntax :
+
+for (datatype var : array_name)
+{
+	System.out.println(var);
+	// Statements.....
+}
+
+Constructor :
+
+* A constructor is a special method which is used to create objects.
+* If the user doesn't create a constructor, it is automatically created by the JVM.
+* Whenever a new object is created using the 'new' keyword, the constructor is called automatically.
+
+To declare a constructor, we should use :
+// Syntax : 
+
+public ClassName(){
+
+}
+
+Types of constructors:
+
+1) Default Constructor
+2) Parameterised/User-Defined Constructor
+We can create parameterised constructor by changing two things:
+
+(i) No of parameters
+(ii)DataType of the parameters 
+
+Regular Expressions: 
+
+Regular Expressions are used to perform pattern matching. We can find and match a word or text in a String using regular expressions.
+
+Interview Question : Write a Java Program to split a String into an array using a target character.
+
+Solution : Code Example (IDE)
+
+Object Oriented Programming :
+It is a method/property by which we can solve real-world problems.
+there are four pillars of OOPs :
+
+1. Encapsulation : 
+Example: Capsule : 
+Binding the code into blocks so that it is not accidentally modified. It is used for safety and security.
+2. Inheritance : 
+The process of inheriting the properties of the parent class into the child class is called inheritance.
+Parent Class -- Super Class
+Child Class -- Base Class or Sub Class
+3. Data Abstraction : 
+Hiding the implementation details and only showing the functionality to the user is called abstraction.
+Showing -- 'What'
+Not Showing -- 'How'
+4. Polymorphism : 
+The process by which same method can have different meaning in different classes is called polymorphism.
+1. Method Overloading
+2. Method Overriding
+
+
+Encapsulation : 
+
+Encapsulation in Java is achieved by using private members for a class and accessing them using getters and setters.
+
+'this' keyword refers to the current class instance variable.
+
+Inheritance :
+The process of accessing the methods/properties of the parent class in the subclass/child class is called inheritance. We make use of the extends keyword for inheriting any class.
+
+Types:
+Single Level
+Multi Level
+Multiple
+Hierarchical
+Hybrid
+
+Java doesn't support multiple inheritance directly. That means we cannot extend two classes or more than one class. So, to exhibit multiple inheritance we use interfaces. 
+
+Father  Mother
+    Child
+
+Possible using Interface
+
+Abstraction:
+Mobile --> Call --> Parents, friend, GF, BF 
+Remote Control --> Just perform the operation that's all.
+'What' is visible.
+'How' is not visible.
+
+Hiding the implementation and only showing the  functionality to the user is called data abstraction.
+
+Abstraction can be achieved by two ways in Java:
+
+1. Abstract Classes and Methods: (0-100%)
+
+Abstract Class: 
+
+* It is a restricted class which cannot have objects.
+* We need to inherit this class to create objects.
+
+Abstract Methods:
+
+* These methods can be used in abstract classes and they do not have a body.
+* The body of abstract methods is provided in the child class (inherited class)
+Note: An abstract class can have both abstract methods and regular/normal/concrete methods.
+If we have only abstract methods in an abstract class, it is 100% abstraction.
+That's why abstract classes can achieve 0-100 % abstraction.
+
+2. Interfaces: (100%)
+
+* An interface is a completely abstract class that is used to group related methods with empty bodies. 
+* The body of all the methods are provided in the class which implements the interface.
+
+* We use the 'implements' keyword for accessing the properties of an interface.
+
+Uses of an interface:
+1. Security
+2. We achieve multiple inheritance using interfaces.
+3. To implement multiple interfaces, we separate each one with a comma (,).
+
+Polymorphism :
+poly - many 
+morph - shapes/forms
+
+Example: 
+
+In the class / session ---> Saurav /Trainer/Teacher
+At Home                ---> Son
+Restaurant             ---> Customer
+
+Entity/Person ----> Saurav (Not Changing)
+Role/Character ---> Changing
+
+Definition : The process by which same method can behave differently in same or different classes is called polymorphism.
+Two Types:
+1. Method/Function Overloading
+a) Changing the number of parameters
+b) Changing the datatype of the parameters
+
+If a class has multiple methods having the same name but different parameters, it is known as method overloading.
+
+/** Static keyword is used for better memory management
+     * Static methods can be accessed from inside a class directly without object
+     * Static methods can be accessed outside a class using the class name
+     * Static methods belong to the class and not to any particular object
+     */
+
+2. Method/Function Overriding
+
+Same method from parent taken to child and implemented differently.
+Rules:
+a. Method must have the same name as in the parent class.
+b. Method must have the same parameters as in the parent class.
+3. There should be inheritance (IS-A) relationship.
+Car is a vehicle
+Cat is an animal
+
+Associations In Java:
+
+Associations in Java signifies the relationship between classes. 
+There are two types of Associations in Java:
+
+1. Aggregation : 
+Weak Relationship between the classes.
+Has - A Relationship (Loosely Coupled)
+
+Car & Driver / Car & Music Player
+
+2. Composition : 
+Strong Relationship between the classes.
+Is - A Relationship (Tightly Coupled)
+
+Car & Engine
+
+
+Prime Numbers : ?
+A number divisible by 1 and itself :
+A number which has only 2 factors is called a prime number.
+
+2 - Yes 2, 1
+1 - No  1
+17- Yes 1, 17
+91- No 13, 7, 1
+
+Tech Mahindra:
+Write a Java program to display prime numbers between a range.
+* Your program should be efficient and time saving.
+
+2 is a prime number
+3 ....
+97..... 
+
+
+Suppose : 16 
+
+Steps : 1  ---- 16
+Start point: 2,3,4,5,6,7,8,......,15
+End Point : n/2
+
+Runtime & Compiler Time error:
+Any errors related to syntax are called compile time errors.
+The compiler doesn't understand and therefore throws a compilation error.
+Any errors that are logical and happening because of logical calculations in terms of the developer are called runtime errors.
+they are only found during execution.
+
+* We use the try{} catch{} block for handling exceptions in Java.
+* All the Exceptions and Errors belong to the throwable class in Java.
+* If we have to use the Exception class, we  must use it after writing individual catch{} blocks with individual exceptions.
+* If we have to release some memory, close some resources, we must do that in the finally{} block. 
+* The finally{} block in exception handling is a block which gets executed no matter what happens to the program. 
+
+throw & throws :
+throw keyword is used to create/throw user-defined exceptions.
+throws keyword is used to suppress the exceptions.
+
+Access Modifiers in Java :
+
+public : everywhere
+private : class level
+protected: secured / accessed outside by inheritance
+default: package private
+
+-> you cannot use private/protected in front of classes.
+-> constructors are always public
+-> no constructors should be declared private. If done, objects cannot be created.
+
+Access Modifier   Within the class   Within the package  Outside the package
+---------------------------------------------------------------------------------
+private			        Yes		    No			No
+default			        Yes 	    Yes			No
+protected  		        Yes		    Yes			Yes(Inheritance)
+public  		        Yes		    Yes			Yes
+---------------------------------------------------------------------------------
+Wrapper Classes :
+
+Wrapper classes in Java help us to use primitive data types as objects.
+
+				Table of wrapper classes:
+
+       Primitive Data Type        Wrapper Class
+		byte						Byte
+		short						Short
+		int						    Integer
+		float						Float
+		double						Double
+		long						Long
+		boolean						Boolean
+		char						Character
+
+Example:
+ArrayList<int> numbers = new ArrayList<int>();      // Not valid
+
+ArrayList<Integer> numbers = new ArrayList<Integer>(); // Valid 
+
+Enum : 
+Enum is a special class which can store constant values.
+To create an enum, we use the 'enum' keyword and the Constants should be in Capital letters separated by a comma.
+Enum is short form for enumeration meaning "specially listed".	   
+
+String Buffer & String Builder :
+
+String Buffer and String Builder are special classes which help developers to create mutable strings/objects.
+
+Generally Strings are immutable, so, we use the Buffer & Builder classes to perform string manipulations.
+
+String Builder is the more efficient between the two and can be used for larger string operations. 
+
+Interview Question :
+
+What is the difference between 'final', 'finally' & 'finalize' ?
+
+Ans: 
+'final' is a keyword used in Java in front of classes, variables, methods and parameters. It is a non access modifier.
+
+'finally' is a block in exception handling in Java. After we write the try{} & catch{} blocks, we use the finally{} block to execute some operations which are mandatory and should happen even though there are exceptions in our code.
+
+'finalize'  is a method in the Java Object class. It is used by the JVM to perform Garbage Collection. We don't have to call the finalize() method.
+It is automatically called by the JVM to clear memory and release resources. Therefore, we can say that Garbage Collection in Java is done automatically. The developer is not burdened with this task of freeing memory.
+
+clrscr();
+getch();
+
+How do you achieve multitasking using threads? 
+-> We can use the Thread Class (extends)
+-> We can use the Runnable Interface (implements)
+
+JAR : What do you mean  by JAR ?
+
+Java Archive are collection of files, classes and methods which help us in performing some special operations.
+
+jars for Reading Excel data
+JSON : Java Script Object Notation
+
+commons-collection4-4.4.jar
+poi
+poi-ooxml
+poi-ooxml-schemas
+xmlbeans
+
+How to instantiate Member Inner class in Java?
+An object or instance of a member's inner class always exists within an object of its outer class.
+The new operator is used to create the object of member inner class with slightly different syntax.
+
+The general form of syntax to create an object of the member inner class is as follows:
+
+Syntax:
+outerClassObject.new InnerClassConstructor();
+OuterClassReference.new MemberInnerClassConstructor();
+Example:
+
+obj.new Inner();
+Here, OuterClassReference is the reference of the outer class followed by a dot which is followed by the new operator.
+
+A class is created, but it's name is decided by the compiler, which extends the Person class and provides the implementation of the eat() method.
+An object of the Anonymous class is created that is referred to by 'p,' a reference variable of Person type.
+
+
+BOSCH, CAPGEMINI, TCS, ACCENTURE, MINDTREE
+Q. Write a Java Program to create multiple folders from an array of Strings inside a particular folder.
+
+5-6 LPA
+
+Day 2 Questions:
+
+Write a JAVA Program to demonstrate the use of different types of operators.
+
+Write a JAVA Program to demonstrate the use of different Bitwise Operators.
+
+Write a JAVA Program to add 2 numbers without using '+' symbol. In 4 different ways.
+
+Write a JAVA Program to demonstrate the use of Switch Case by writing same set of statements for multiple case values.
+Along with break & continue.
+
+Write a JAVA program to demonstrate the difference between while, do While & for Loop.
+
+Write a JAVA program to find the square of a number without using /,* & pow().
+
+Write a JAVA Program to multiply two matrices of different Order.
+
+Write a JAVA Program to display the following pyramids & triangles:
+
+*                                             1                                    1
+
+* *                                          2 2                                 1 2
+
+* * *                                        3 3 3                              1 2 3
+
+* * * *                                     4 4 4 4                           1 2 3 4
+
+* * * * *                                   5 5 5 5 5                        1 2 3 4 5
+
+Write a JAVA Program to display Diamond Pattern on the console using *.
+
+Write a JAVA Program to display Heart Pattern on the console using *.
+
+Day 3 Questions:
+Question 1: Write a Java program to sum values of an array.
+
+Question 2: Write a Java program to insert an element (specific position) into an array.
+
+Question 3: Write a Java program to find the maximum and minimum value of an array.
+
+Question 4: Write a Java program to reverse an array of integer values.
+
+Question 5: Write a Java program to remove duplicate elements from an array.
+
+Question 6: Write a Java program to find duplicate values in an array of string values.
+
+Question 7: Write a Java program to add two matrices of the same size.
+
+Question 8: Write a java program to find the transpose of a Matrix
+
+Question 9: What is a Jagged Array in Java? Implement a Java program to show Jagged array.
+
+Question 10: In a given string remove the occurrence of the same element using string buffer and builder classes in Java
+
+Question 1: Write Program to find sum of n natural numbers using functions
+
+Question 2: Write Program to print Fibonacci Series using functions
+
+Question 3: Write a Java program to find sum of n natural numbers using recursive function
+
+Question 4: Write a Java program to print Fibonacci Series using recursive function
+
+Question 5: Write a program with a method named getTotal that accepts two integers as an argument and return its sum.
+
+Call this method from main( ) and print the results.
+
+TackleBoX, TCS :
+Write a java program to display the current date & time in the format:
+1) Thu, Jun 13 2024
+2) 165, Jun 13 2024
+                             
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
