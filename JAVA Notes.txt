@@ -206,7 +206,7 @@ Regular Expressions are used to perform pattern matching. We can find and match 
 
 Interview Question : Write a Java Program to split a String into an array using a target character.
 
-Solution : Code Example (IDE)
+Greedy.ChocolateDistribution : Code Example (IDE)
 
 Object Oriented Programming :
 It is a method/property by which we can solve real-world problems.
@@ -559,8 +559,8 @@ Call this method from main( ) and print the results.
 
 TackleBoX, TCS :
 Write a java program to display the current date & time in the format:
-1) Thu, Jun 13 2024
-2) 165, Jun 13 2024
+1) Fri, Dec 06 2024
+2) 341, Dec 06 2024
                              
 
 
