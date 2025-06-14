@@ -63,4 +63,29 @@ class Solution {
 
         return sccCount;
     }
+    public static void main(String[] args) {
+        int V = 6;  // number of vertices
+
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+        for (int i = 0; i < V; i++) {
+            adj.add(new ArrayList<>());
+        }
+
+        // Example Graph:
+        // 0 → 1 → 2 → 0 form one SCC
+        // 1 → 3 → 4 → 5 → 3 form another SCC
+
+        adj.get(0).add(1);
+        adj.get(1).add(2);
+        adj.get(2).add(0);
+        adj.get(1).add(3);
+        adj.get(3).add(4);
+        adj.get(4).add(5);
+        adj.get(5).add(3);
+
+        Solution solution = new Solution();
+        int sccCount = solution.kosaraju(adj);
+        System.out.println("Number of Strongly Connected Components: " + sccCount);
+    }
 }
+
