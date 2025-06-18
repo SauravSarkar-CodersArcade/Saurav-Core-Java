@@ -208,7 +208,7 @@ Interview Question : Write a Java Program to split a String into an array using 
 
 Greedy.ChocolateDistribution : Code Example (IDE)
 
-Object Oriented Programming :
+Object-Oriented Programming :
 It is a method/property by which we can solve real-world problems.
 there are four pillars of OOPs :
 
