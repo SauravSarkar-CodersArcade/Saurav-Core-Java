@@ -26,7 +26,7 @@ public class ThreadWithPriority extends Thread{
         System.out.println("Current thread: " + Thread.currentThread().getName());
         System.out.println("Main Thread Priority: " + Thread.currentThread().getPriority());
         Thread.currentThread().setPriority(10);
-        // Thread.currentThread().setPriority(11); // Invalid (1-10)
+//         Thread.currentThread().setPriority(11); // Invalid (1-10)
         System.out.println("Main Thread Priority: " + Thread.currentThread().getPriority());
         t1.start();
         t2.start();

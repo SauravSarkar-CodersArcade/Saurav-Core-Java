@@ -1,9 +1,7 @@
 package FileHandlingInJava;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
 public class CreateMultipleFoldersWithFilesAndData {
     public static void main(String[] args) throws IOException {
         String[] folderNames = {"CSE", "AI-DS", "EEE", "CIV", "MECH"};
