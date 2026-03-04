@@ -38,7 +38,11 @@ public class VIT {
 //            }
 //            System.out.println();
 //        }
-        zigzag1(9);
-        zigzag2(13);
+        // zigzag1(9);
+        // zigzag2(13);
+        float f = 2.5F;
+        int i = (int)f; // Manual - Narrowing Casting
+        double d = i; // Automatic - Widening Casting
+        int x = (int) d; // Narrowing Casting - Explicit Conversion
     }
 }
