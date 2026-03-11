@@ -63,7 +63,7 @@ The project is organized into multiple directories, each corresponding to a spec
 ### Data Structures
 - Arrays, Lists, and Linked Lists
 - Stacks and Queues
-- Trees, Binary Trees, and Graphs
+- Trees, Binary Trees, and dataStructures.nonLinear.Graphs
 - HashMaps and HashSets
 
 ### Algorithms
